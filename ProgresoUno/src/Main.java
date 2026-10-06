@@ -4,5 +4,9 @@ void main() {
     // Crear una instancia de la clase Carro
     // new es la palabra clave para crear instancias de clases.
     Carro pichirilo = new Carro();
-
+    // Asignar valores a los atributos de la instancia.
+    pichirilo.potencia = 2;
+    // Acceder a los valores de los atributos de la instancia.
+    float velocidad = pichirilo.velocidad;
+    System.out.println("La velocidad del pichirilo es: " + velocidad);
 }
