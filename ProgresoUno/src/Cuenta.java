@@ -4,6 +4,14 @@ public class Cuenta {
     private double saldo;
     float interesAnual;
 
+    public Cuenta(String numero, String titular) {
+        this.numero = numero;
+        this.titular = titular;
+        this.saldo = 0;
+        this.interesAnual = 0.5f;
+    }
+
+    public Cuenta(){}
     //public double getSaldo() {
     public double consultarSaldo() {
         return saldo;
