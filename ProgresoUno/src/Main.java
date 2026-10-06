@@ -34,12 +34,16 @@ void main() {
 
     //c.saldo -= 100;
     c.depositar(-100); // de esta forma se puede validar que no se pueda retirar saldo negativo.
+    c.retirar(100); // para retirar se utiliza el metodo retirar.
     System.out.println("La cuenta del titular: " + c.titular + " es: " + c.consultarSaldo());
     
-    //aquí se ve el problema de acceder directamente a saldo.
-    //se modifica libremente sin ninguna validación.
+    
+    
     //se obtiene un saldo negativo. 
     //c.saldo -= 10000;
-    //System.out.println("La cuenta del titular: " + c.titular + " es: " + c.consultarSaldo());
+    
+    // Retirar dinero de la cuenta con control de saldo 
+    c.retirar(10000);
+    System.out.println("La cuenta del titular: " + c.titular + " es: " + c.consultarSaldo());
 
 }
