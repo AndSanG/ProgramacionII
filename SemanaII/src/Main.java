@@ -9,4 +9,13 @@ void main() {
     // Acceder a los valores de los atributos de la instancia.
     float velocidad = pichirilo.velocidad;
     System.out.println("La velocidad del pichirilo es: " + velocidad);
+
+    // Llamar a los métodos de la instancia pichirilo
+    pichirilo.acelerar();
+    pichirilo.acelerar();
+    pichirilo.acelerar();
+    pichirilo.acelerar();
+    System.out.println("La velocidad del pichirilo es: " + pichirilo.velocidad);
+    pichirilo.frenar();
+    System.out.println("La velocidad del pichirilo es: " + pichirilo.velocidad);
 }
