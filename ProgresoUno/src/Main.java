@@ -26,18 +26,20 @@ void main() {
     c.numero = "123456789";
     c.interesAnual = 0.05f;
     // saldo inicial es 0 por defecto java asigna este valor a variables numerica.
-    System.out.println("La cuenta del titular: " + c.titular + " es: " + c.saldo);
+    System.out.println("La cuenta del titular: " + c.titular + " es: " + c.consultarSaldo());
 
-    c.saldo = 1000;
-    System.out.println("La cuenta del titular: " + c.titular + " es: " + c.saldo);
+    //c.saldo = 1000;
+    c.depositar(1000);
+    System.out.println("La cuenta del titular: " + c.titular + " es: " + c.consultarSaldo());
 
-    c.saldo -= 100;
-    System.out.println("La cuenta del titular: " + c.titular + " es: " + c.saldo);
+    //c.saldo -= 100;
+    c.depositar(-100); // de esta forma se puede validar que no se pueda retirar saldo negativo.
+    System.out.println("La cuenta del titular: " + c.titular + " es: " + c.consultarSaldo());
     
     //aquí se ve el problema de acceder directamente a saldo.
     //se modifica libremente sin ninguna validación.
     //se obtiene un saldo negativo. 
-    c.saldo -= 10000;
-    System.out.println("La cuenta del titular: " + c.titular + " es: " + c.saldo);
+    //c.saldo -= 10000;
+    //System.out.println("La cuenta del titular: " + c.titular + " es: " + c.consultarSaldo());
 
 }
