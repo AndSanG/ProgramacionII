@@ -34,4 +34,10 @@ void main() {
     c.saldo -= 100;
     System.out.println("La cuenta del titular: " + c.titular + " es: " + c.saldo);
     
+    //aquí se ve el problema de acceder directamente a saldo.
+    //se modifica libremente sin ninguna validación.
+    //se obtiene un saldo negativo. 
+    c.saldo -= 10000;
+    System.out.println("La cuenta del titular: " + c.titular + " es: " + c.saldo);
+
 }
