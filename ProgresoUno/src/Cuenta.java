@@ -1,6 +1,6 @@
 public class Cuenta {
     String numero;
     String titular;
-    double saldo;
+    private double saldo;
     float interesAnual;
 }
