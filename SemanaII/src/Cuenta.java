@@ -40,8 +40,12 @@ public class Cuenta {
 
     @Override
     public String toString() {
-        return "Cuenta{numero=" + numero + ", titular=" + titular
-                + ", saldo=" + saldo + ", interesAnual=" + interesAnual + "}";
+        return "Cuenta{\n"
+                + "numero=" + numero + "\n"
+                + "titular=" + titular + "\n"
+                + "saldo=" + saldo + "\n"
+                + "interesAnual=" + interesAnual + "\n"
+                + "}";
     }
 
 }
