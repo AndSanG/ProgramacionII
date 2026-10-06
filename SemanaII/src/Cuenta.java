@@ -17,5 +17,17 @@ public class Cuenta {
         }
         saldo += cantidad;
     }
+
+    public void retirar(double cantidad) {
+        if (cantidad <= 0) {
+            System.out.println("Error: el retiro debe ser mayor que 0.");
+            return;
+        }
+        if (cantidad > saldo) {
+            System.out.println("Error: saldo insuficiente.");
+            return;
+        }
+        saldo -= cantidad;
+    }
     
 }
