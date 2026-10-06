@@ -18,4 +18,12 @@ void main() {
     System.out.println("La velocidad del pichirilo es: " + pichirilo.velocidad);
     pichirilo.frenar();
     System.out.println("La velocidad del pichirilo es: " + pichirilo.velocidad);
+
+    // Ejemplo Cuenta 
+    // crear instancias de cuenta
+    Cuenta c = new Cuenta();
+    c.titular = "Juan Perez";
+    c.numero = "123456789";
+    c.interesAnual = 0.05f;
+    System.out.println("La cuenta del titular: " + c.titular + " es: " + c.saldo);
 }
