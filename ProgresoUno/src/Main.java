@@ -25,5 +25,13 @@ void main() {
     c.titular = "Juan Perez";
     c.numero = "123456789";
     c.interesAnual = 0.05f;
+    // saldo inicial es 0 por defecto java asigna este valor a variables numerica.
     System.out.println("La cuenta del titular: " + c.titular + " es: " + c.saldo);
+
+    c.saldo = 1000;
+    System.out.println("La cuenta del titular: " + c.titular + " es: " + c.saldo);
+
+    c.saldo -= 100;
+    System.out.println("La cuenta del titular: " + c.titular + " es: " + c.saldo);
+    
 }
