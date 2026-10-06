@@ -37,5 +37,11 @@ public class Cuenta {
         }
         saldo -= cantidad;
     }
-    
+
+    @Override
+    public String toString() {
+        return "Cuenta{numero=" + numero + ", titular=" + titular
+                + ", saldo=" + saldo + ", interesAnual=" + interesAnual + "}";
+    }
+
 }
