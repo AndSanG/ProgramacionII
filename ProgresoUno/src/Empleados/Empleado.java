@@ -24,6 +24,14 @@ public class Empleado {
         setFechaIng(fechaIng);
     }
 
+    // Constructor sobrecargado: los atributos que no se envian quedan con el valor por default.
+    public Empleado(String cedula, String nombre, String apellido, char genero) {
+        setCedula(cedula);
+        setNombre(nombre);
+        setApellido(apellido);
+        setGenero(genero);
+    }
+
     public void setCedula(String cedula) {
         this.cedula = cedula;
     }

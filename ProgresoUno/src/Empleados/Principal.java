@@ -9,5 +9,10 @@ public class Principal {
 
         // Los atributos fechaNac y fechaIng reciben los objetos f1 y f2.
         Empleado emp = new Empleado("123", "Sonia", "Torres", 'f', 2000000.0, f1, f2);
+
+        // Se ejecuta el constructor de 4 parametros: salario en 0 y fechas en null.
+        Empleado x = new Empleado("456", "Juan", "Díaz", 'm');
     }
+
+
 }
