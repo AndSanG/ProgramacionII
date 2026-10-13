@@ -19,6 +19,6 @@ public class Fecha {
     // Sobreescribe el toString heredado de Object para imprimir los atributos del objeto.
     @Override
     public String toString() {
-        return "dia:" + dia + " mes:" + mes + " año:" + anio;
+        return dia + "/" + mes + "/" + anio;
     }
 }
