@@ -3,10 +3,13 @@ package Libros;
 public class LibroCalificaciones {
     private String nombreDelCurso;
 
+    // java no obliga a usar set get pero por convencion se usan así.
+    // public void setNombreDelCurso(String nombre){
     public void establecerNombreDelCurso(String nombre) {
         nombreDelCurso = nombre;
     }
 
+    // public String getNombreDelCurso(){
     public String obtenerNombreDelCurso() {
         return nombreDelCurso;
     }
