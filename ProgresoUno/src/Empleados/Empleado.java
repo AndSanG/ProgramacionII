@@ -59,4 +59,17 @@ public class Empleado {
     public void setFechaIng(Fecha fechaIng) {
         this.fechaIng = fechaIng;
     }
+
+    @Override
+    public String toString() {
+        return "Empleado{\n"
+                + "cedula=" + cedula + "\n"
+                + "nombre=" + nombre + "\n"
+                + "apellido=" + apellido + "\n"
+                + "genero=" + genero + "\n"
+                + "salario=" + salario + "\n"
+                + "fechaNac=" + fechaNac + "\n"
+                + "fechaIng=" + fechaIng + "\n"
+                + "}";
+    }
 }
