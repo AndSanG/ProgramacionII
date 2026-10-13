@@ -15,12 +15,40 @@ public class Empleado {
 
     public Empleado(String cedula, String nombre, String apellido, char genero,
                     double salario, Fecha fechaNac, Fecha fechaIng) {
+        setCedula(cedula);
+        setNombre(nombre);
+        setApellido(apellido);
+        setGenero(genero);
+        setSalario(salario);
+        setFechaNac(fechaNac);
+        setFechaIng(fechaIng);
+    }
+
+    public void setCedula(String cedula) {
         this.cedula = cedula;
+    }
+
+    public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public void setApellido(String apellido) {
         this.apellido = apellido;
+    }
+
+    public void setGenero(char genero) {
         this.genero = genero;
+    }
+
+    public void setSalario(double salario) {
         this.salario = salario;
+    }
+
+    public void setFechaNac(Fecha fechaNac) {
         this.fechaNac = fechaNac;
+    }
+
+    public void setFechaIng(Fecha fechaIng) {
         this.fechaIng = fechaIng;
     }
 }
