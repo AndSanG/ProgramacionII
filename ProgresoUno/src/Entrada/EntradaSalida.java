@@ -1,3 +1,5 @@
+package Entrada;
+
 import Banco.Cuenta;
 import javax.swing.JOptionPane;
 import java.io.BufferedReader;

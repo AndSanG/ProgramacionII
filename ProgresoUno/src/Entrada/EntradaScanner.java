@@ -1,3 +1,5 @@
+package Entrada;
+
 import Banco.Cuenta;
 import java.util.Scanner;
 
