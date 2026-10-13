@@ -6,5 +6,7 @@ public class Principal {
         Fecha f2 = new Fecha(2, 5, 2013);
         System.out.println(f1);
         System.out.println(f2);
+
+        Empleado e = new Empleado();
     }
 }
