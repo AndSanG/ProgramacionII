@@ -32,7 +32,7 @@ public class Fecha {
     // Sobreescribe el toString heredado de Object para imprimir los atributos del objeto.
     @Override
     public String toString() {
-        return dia + "/" + mes + "/" + anio;
+        return String.format("%02d/%02d/%d", dia, mes, anio);
     }
 
     // Asigna al objeto la fecha de hoy.
