@@ -15,6 +15,9 @@ public class Principal {
         Empleado x = new Empleado("456", "Juan", "Díaz", 'm');
         System.out.println(x);
 
+        Fecha f3 = new Fecha("27/01/1971");
+        System.out.println("Fecha desde un String: " + f3);
+
         Fecha hoy = new Fecha();
         hoy.inicializarHoy();
         System.out.println("Hoy es: " + hoy);

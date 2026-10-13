@@ -19,6 +19,16 @@ public class Fecha {
         this.anio = anio;
     }
 
+    // Crea una fecha a partir de un String con la forma "dd/mm/aaaa".
+    public Fecha(String sFecha) {
+        String sDia = sFecha.substring(0, 2);
+        String sMes = sFecha.substring(3, 5);
+        String sAnio = sFecha.substring(6);
+        dia = Integer.parseInt(sDia);
+        mes = Integer.parseInt(sMes);
+        anio = Integer.parseInt(sAnio);
+    }
+
     // Sobreescribe el toString heredado de Object para imprimir los atributos del objeto.
     @Override
     public String toString() {
