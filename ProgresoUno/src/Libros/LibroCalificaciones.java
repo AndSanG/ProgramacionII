@@ -2,7 +2,8 @@ package Libros;
 
 public class LibroCalificaciones {
     private String nombreDelCurso;
-
+    public static String universidad = "UDLA";
+    
     public LibroCalificaciones(String nombre) {
         nombreDelCurso = nombre;
     }
