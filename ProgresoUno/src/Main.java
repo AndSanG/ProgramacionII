@@ -1,5 +1,6 @@
 import Concesionario.Carro;
 import Banco.Cuenta;
+import Taller.CarroDeportivo;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -49,4 +50,14 @@ void main() {
     c.retirar(10000);
     System.out.println("La cuenta del titular: " + c.titular + " es: " + c.consultarSaldo());
 
+    // Ejemplo protected
+    // CarroDeportivo (paquete Taller) hereda de Carro y SI puede usar kilometraje y registrarKilometraje.
+    CarroDeportivo rayo = new CarroDeportivo();
+    rayo.potencia = 5;
+    rayo.turbo(100);
+    System.out.println("Kilometraje del rayo: " + rayo.consultarKilometraje());
+
+    // Main esta en otro paquete y no es subclase de Carro, por eso NO compila:
+    //pichirilo.kilometraje = 10;
+    //pichirilo.registrarKilometraje(10);
 }

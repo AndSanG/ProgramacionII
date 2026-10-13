@@ -3,6 +3,8 @@ package Concesionario;
 public class Carro {
     public int potencia;
     public float velocidad;
+    // protected: visible en el paquete Concesionario y en las subclases de Carro (aunque esten en otro paquete).
+    protected int kilometraje;
 
     public void acelerar() {
         velocidad += potencia;
@@ -10,6 +12,10 @@ public class Carro {
 
     public void frenar() {
         velocidad *= 0.5f;
+    }
+
+    protected void registrarKilometraje(int km) {
+        kilometraje += km;
     }
 
     /*
