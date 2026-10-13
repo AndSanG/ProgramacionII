@@ -15,4 +15,10 @@ public class Fecha {
         this.mes = mes;
         this.anio = anio;
     }
+
+    // Sobreescribe el toString heredado de Object para imprimir los atributos del objeto.
+    @Override
+    public String toString() {
+        return "dia:" + dia + " mes:" + mes + " año:" + anio;
+    }
 }
