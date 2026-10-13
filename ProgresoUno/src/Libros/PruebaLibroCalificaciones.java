@@ -1,16 +1,10 @@
 package Libros;
 
-import java.util.Scanner;
-
 public class PruebaLibroCalificaciones {
     public static void main(String args[]) {
-        Scanner entrada = new Scanner(System.in);
-        LibroCalificaciones miLibroCalificaciones = new LibroCalificaciones();
-        System.out.println("El nombre inicial del curso es: " + miLibroCalificaciones.obtenerNombreDelCurso());
-        System.out.println("Escriba el nombre del curso:");
-        String nombre = entrada.nextLine();
-        miLibroCalificaciones.establecerNombreDelCurso(nombre);
-        miLibroCalificaciones.mostrarMensaje();
-        entrada.close();
+        LibroCalificaciones miLibro = new LibroCalificaciones("JA00 Introducción a Java");
+        LibroCalificaciones miLibro1 = new LibroCalificaciones("CSO Estructura de Datos");
+        System.out.println("El nombre del curso es:" + miLibro.obtenerNombreDelCurso());
+        System.out.println("El nombre del curso es:" + miLibro1.obtenerNombreDelCurso());
     }
 }
