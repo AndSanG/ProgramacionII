@@ -1,8 +1,10 @@
+package Banco;
+
 public class Cuenta {
-    String numero;
-    String titular;
+    public String numero;
+    public String titular;
     private double saldo;
-    float interesAnual;
+    public float interesAnual;
 
     public Cuenta(String numero, String titular) {
         this.numero = numero;

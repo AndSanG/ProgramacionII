@@ -1,12 +1,14 @@
-public class Carro {
-    int potencia;
-    float velocidad;
+package Concesionario;
 
-    void acelerar() {
+public class Carro {
+    public int potencia;
+    public float velocidad;
+
+    public void acelerar() {
         velocidad += potencia;
     }
 
-    void frenar() {
+    public void frenar() {
         velocidad *= 0.5f;
     }
 

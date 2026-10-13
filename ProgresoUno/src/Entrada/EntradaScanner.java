@@ -1,3 +1,4 @@
+import Banco.Cuenta;
 import java.util.Scanner;
 
 /**
