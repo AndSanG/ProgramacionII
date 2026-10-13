@@ -72,4 +72,15 @@ public class Empleado {
                 + "fechaIng=" + fechaIng + "\n"
                 + "}";
     }
+
+    // Edad del empleado: años completos entre su fecha de nacimiento y hoy.
+    public int calcularEdad() {
+        Fecha hoy = new Fecha();
+        hoy.inicializarHoy();
+        return fechaNac.calcularAnios(hoy);
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
 }

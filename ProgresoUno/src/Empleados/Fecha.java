@@ -45,4 +45,13 @@ public class Fecha {
         mes = gc.get(Calendar.MONTH) + 1;
         anio = gc.get(Calendar.YEAR);
     }
+
+    // Cantidad de años completos transcurridos desde esta fecha hasta la fecha recibida.
+    public int calcularAnios(Fecha hasta) {
+        int anios = hasta.anio - anio;
+        if (hasta.mes < mes || (hasta.mes == mes && hasta.dia < dia)) {
+            anios--;
+        }
+        return anios;
+    }
 }
