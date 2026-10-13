@@ -12,6 +12,12 @@ public class Principal {
         System.out.println(emp);
         System.out.println("Edad de " + emp.getNombre() + ": " + emp.calcularEdad());
 
+        System.out.println("Prestaciones: " + emp.calcularPrestaciones());
+
+        // Modificar el salario
+        emp.setSalario(2500000.0);
+        System.out.println("Prestaciones con el nuevo salario: " + emp.calcularPrestaciones());
+
         // Se ejecuta el constructor de 4 parametros: salario en 0 y fechas en null.
         Empleado x = new Empleado("456", "Juan", "Díaz", 'm');
         System.out.println(x);

@@ -83,4 +83,12 @@ public class Empleado {
     public String getNombre() {
         return nombre;
     }
+
+    // Prestaciones: p = (a * s) / 12, donde a es la antigüedad en años y s el salario.
+    public double calcularPrestaciones() {
+        Fecha hoy = new Fecha();
+        hoy.inicializarHoy();
+        int antiguedad = fechaIng.calcularAnios(hoy);
+        return (antiguedad * salario) / 12;
+    }
 }
