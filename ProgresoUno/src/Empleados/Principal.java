@@ -14,6 +14,10 @@ public class Principal {
         // Se ejecuta el constructor de 4 parametros: salario en 0 y fechas en null.
         Empleado x = new Empleado("456", "Juan", "Díaz", 'm');
         System.out.println(x);
+
+        Fecha hoy = new Fecha();
+        hoy.inicializarHoy();
+        System.out.println("Hoy es: " + hoy);
     }
 
 
