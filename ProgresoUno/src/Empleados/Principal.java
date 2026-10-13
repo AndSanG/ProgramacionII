@@ -7,6 +7,7 @@ public class Principal {
         System.out.println(f1);
         System.out.println(f2);
 
-        Empleado e = new Empleado();
+        // Los atributos fechaNac y fechaIng reciben los objetos f1 y f2.
+        Empleado emp = new Empleado("123", "Sonia", "Torres", 'f', 2000000.0, f1, f2);
     }
 }
