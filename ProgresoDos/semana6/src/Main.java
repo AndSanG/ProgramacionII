@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        int fragmento = 5;
+        int fragmento = 1;
 
         if (fragmento == 1) {
             // Un arreglo de tipo primitivo nace lleno con el valor por defecto
@@ -44,6 +44,15 @@ public class Main {
             System.out.println(tickets[1]);       // null
             System.out.println(tickets.length);   // 3, aunque solo hay un ticket
         }
-
+        // fragmento 4 del 2329
+        if (fragmento == 6) {
+            // Llamar a un método sobre un puesto vacío
+            TicketParqueadero[] tickets = new TicketParqueadero[3];
+            tickets[0] = new TicketParqueadero("PCD1234");
+            for (int i = 0; i < tickets.length; i++) {
+                System.out.println(tickets[i].getPlaca());
+            }
+            // Imprime PCD1234 y luego NullPointerException en tickets[1]
+        }
     }
 }
