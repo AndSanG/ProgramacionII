@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Predicciones {
     public static void main(String[] args) {
-        int fragmento = 4;
+        int fragmento = 1;
 
         if (fragmento == 1) {
             // La lista nace vacía y crece con add: size cuenta elementos, no lugares
@@ -45,6 +45,26 @@ public class Predicciones {
             System.out.println(viajes.get(3));
             // IndexOutOfBoundsException: Index 3 out of bounds for length 3
         }
-        
+        // fragmento 1 y 2 para 2327
+        if (fragmento == 5) {
+            // La lista nace vacía y crece con add: size cuenta elementos, no lugares
+            ArrayList<String> placas = new ArrayList<>();
+            System.out.println(placas.size());   // 0
+            placas.add("PCD1234");
+            placas.add("GBA5678");
+            System.out.println(placas.size());   // 2
+            System.out.println(placas.get(1));   // GBA5678
+        }
+
+        if (fragmento == 6) {
+            // remove corre los elementos: no queda un hueco
+            ArrayList<String> placas = new ArrayList<>();
+            placas.add("PCD1234");
+            placas.add("GBA5678");
+            placas.add("TAX0101");
+            placas.remove(0);
+            System.out.println(placas.get(0));   // GBA5678
+            System.out.println(placas.size());   // 2
+        }
     }
 }
