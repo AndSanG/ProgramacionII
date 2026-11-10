@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Predicciones {
     public static void main(String[] args) {
-        int fragmento = 3;
+        int fragmento = 4;
 
         if (fragmento == 1) {
             // La lista nace vacía y crece con add: size cuenta elementos, no lugares
@@ -35,5 +35,16 @@ public class Predicciones {
             System.out.println(viajes);               // [4, 9, 7]
             System.out.println(viajes.contains(0));   // false
         }
+        // el mismo IndexOutOfBoundsException cuando accedes a un elemento que no existe.
+        if (fragmento == 4) {
+            // Crece sola, pero get no: pedir una posición que no existe sigue siendo un error
+            ArrayList<Integer> viajes = new ArrayList<>();
+            viajes.add(4);
+            viajes.add(0);
+            viajes.add(7);
+            System.out.println(viajes.get(3));
+            // IndexOutOfBoundsException: Index 3 out of bounds for length 3
+        }
+        
     }
 }
